@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.math.BigDecimal;
 
-
 /**
+* From <i>Nature Inspired Algorithms</i> predefined <i>Ackley's Function</i> coded.
 * FitnessFunction class contains fitness function whose
 * value will be optimized with optimization algorithms,
 * functionality of this class involves calculating the fitness
@@ -15,13 +15,7 @@ import java.math.BigDecimal;
 * 
 */
 
-
-// From Nature Inspired Algorithms
-// Predefined Ackley's Function Coded
-
 public class FitnessFunction{
-
-	// Fitness Function Parameters
 
 	/**
 	* This variable represents the dimensions of the chromosome that is passed for fitness evaluation.
@@ -63,12 +57,10 @@ public class FitnessFunction{
 		double finalTermA = 20*Math.exp(-0.02*Math.sqrt(termA/dim));
 		double finalTermB = Math.exp(termB/dim);
 		double result = 20+Math.exp(1)-finalTermA-finalTermB;	
-		// return double rounded result
 		return round(result, 2);
 
 		}
 
-	// method to round code for result using BigDecimal class
 
 	/**
 	* This is method that takes the fitness value and the decimal digit to be
@@ -77,6 +69,7 @@ public class FitnessFunction{
 	* @param decimalPlace This specifies the number of digits to be rounded off to.
 	* @return double Rounded off double value is returned
 	* @since 1.0
+	* @see BigDecimal 
 	*/	
 
 	public static double round(double d, int decimalPlace){
