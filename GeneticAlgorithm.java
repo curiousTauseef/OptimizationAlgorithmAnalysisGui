@@ -16,10 +16,10 @@ import java.io.IOException;
 
 public class GeneticAlgorithm extends FitnessFunction{
 
-	/**
-	* Name of the algorithm being used.	
-	* @since 1.0
-	*/
+			/**
+			* Name of the algorithm being used.	
+			* @since 1.0
+			*/
 	private final static String algorithmName = "GeniticAlgorithm"; // Algo Name
 	/**
 	* One point cross-over rate.	
@@ -157,7 +157,7 @@ public class GeneticAlgorithm extends FitnessFunction{
 	* This method creates a deepcopy i.e. a seperate copy of chromosome that will not be side effected by originals manipulation. A seperate copy of the object is created with same values as <i>copyFrom</i> parameter.   
 	* @param copyTo This the chromosome in which the values copied into.
 	* @param copyFrom This is the chromosome from which the values copied from iteratively
-	* @return ArrayList This is the new copied <i>double</i> chromosome which is returned
+	* @return ArrayList This is the new copied <i>double</i> value containing chromosome which is returned
 	* @exception NullPointerException This exception is throwned while accessing null list
 	* @exception IndexOutOfBoundsException If the index accessed is out of bounds of list's size
 	* @see Individual
@@ -182,7 +182,6 @@ public class GeneticAlgorithm extends FitnessFunction{
 	* This method is used for remembering best fitness and corresponding chromosome to it.
 	* Best fitness and chromosome are calculated and stored for global usage throughout the program.
 	* @exception NullPointerException This exception is throwned while accessing null list
-	* @exception IndexOutOfBoundsException If the index accessed is out of bounds of list's size 
 	* @see FitnessFunction
 	* @since 1.0
 	*/
@@ -207,7 +206,6 @@ public class GeneticAlgorithm extends FitnessFunction{
 	* @param list This is a list passed with size zero
 	* @return ArrayList This is a list with size of <i>dim</i> in FitnessFunction class
 	* @exception NullPointerException This exception is throwned while accessing null list
-	* @exception IndexOutOfBoundsException If the index accessed is out of bounds of dim's size
 	* @see FitnessFunction
 	* @since 1.0
 	*/
@@ -225,8 +223,6 @@ public class GeneticAlgorithm extends FitnessFunction{
 	/**
 	* This method is used for randomly picking up two chromosome from the population and performing one point crossover for them. Which generates two offsprings with different fitness values.
 	* After calculating and comparing the fitness of parent and corresponding offsprings it also replaces them with best fitness valued chromosome respectively.
-	* @exception NullPointerException This exception is throwned while accessing null list
-	* @exception IndexOutOfBoundsException If the index accessed is out of bounds of list's size
 	* @see Individual
 	* @see FitnessFunction
 	* @since 1.0
@@ -307,8 +303,6 @@ public class GeneticAlgorithm extends FitnessFunction{
 	/**
 	* This method is used for randomly picking up one chromosome from the population and mutating one chromosome value to generate new child chromosome.
 	* After calculating and comparing the fitness of parent and corresponding offspring it also replaces parent with best fitness valued chromosome.
-	* @exception NullPointerException This exception is throwned while accessing null list
-	* @exception IndexOutOfBoundsException If the index accessed is out of bounds of list's size
 	* @see Individual
 	* @see FitnessFunction
 	* @since 1.0
@@ -360,8 +354,7 @@ public class GeneticAlgorithm extends FitnessFunction{
 	/**
 	* This the main method which evaluates the chromosomes with genetic algorithm<i>(i.e. intialize, crossover, mutations and terminate)</i> and stores the result of best chromosome in the <i>.csv</i> file.
 	* @param args Unused
-	* @exception NullPointerException This exception is throwned while accessing null list
-	* @exception IndexOutOfBoundsException If the index accessed is out of bounds of list's size
+	* @exception NullPointerException This exception is throwned while accessing <code>null</code> list/FileWriterObject.
 	* @since 1.0
 	*/
 
