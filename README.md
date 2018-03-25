@@ -11,6 +11,6 @@ __Usage Instructions__
 
 __Sample Screenshot__  
 
-This is sample GUI generated from GraphPloiGui.java from swing library methods.  
+This is sample GUI generated from GraphPloiGui.java with swing library methods.  
 
 ![ScreenShot of Project](SamplePlot.png)  
